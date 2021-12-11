@@ -1,0 +1,128 @@
+/*
+this make the padding to be inside our box model. 
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: monospace;
+}
+.calculator-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: right;
+  font-size: 40px;
+}
+
+.calculator-input input:focus {
+  background-color: white;
+}
+.calculator-buttons {
+  padding: 20px;
+  /* CSS GRID STUFF GOES HERE */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-gap: 15px;
+}
+.number {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease background;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 24px;
+}
+.number:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.decimal {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease background;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 24px;
+}
+.decimal:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.operator {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease background;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 24px;
+}
+.operator:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.all-clear {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease background;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 24px;
+}
+.all-clear {
+  grid-column: span 3;
+}
+.is-zero {
+  grid-column: span 2;
+}
+.all-clear {
+  background: #3572db;
+}
+.all-clear:hover {
+  background: blue;
+}
+.equal-sign {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease background;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 24px;
+}
+.equal-sign:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.equal-sign {
+  background: #28d060;
+}
+.equal-sign:hover {
+  background: #00e74d;
+}
