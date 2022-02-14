@@ -1,7 +1,7 @@
 let operand1 = null,
   operation = null,
   currentInput = "";
-const screen = document.getElementById("result");
+let screen = document.getElementById("result");
 
 function handleNumber() {
   currentInput += this.value;
@@ -46,8 +46,8 @@ function clear() {
   screen.value = 0;
 }
 
-const numbers = document.getElementsByClassName("number");
-const operations = document.getElementsByClassName("operator");
+let numbers = document.getElementsByClassName("number");
+let operations = document.getElementsByClassName("operator");
 
 for (let i = 0; i < numbers.length; ++i) {
   numbers[i].addEventListener("click", handleNumber, false);
